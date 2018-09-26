@@ -60,6 +60,7 @@ html{
 .navigation-bar a,.selected-icon a{
   padding-top: .5rem;
   font-size: 2rem;
+  display: block;
 }
 .navigation-bar .bg{
   background-color:#3fb0ac;
@@ -80,7 +81,6 @@ html{
   overflow: hidden;
   width:90%;
   float:right;
-  height: 8%;
   font-family:Ubuntu;
   box-shadow: 0rem 0.2rem #F2F4F2;
 }
@@ -137,23 +137,22 @@ cursor: pointer;
 .topnav .badge[data]:after {
     content: "";
     position: absolute;
-    top: 15px;
-    right: -2px;
-    font-size: 11px;
+    top: 1.5rem;
+    right: -0.2rem;
+    font-size: 1.1rem;
     font-family: "Roboto","Helvetica","Arial",sans-serif;
     font-weight: 600;
     text-align: center;
-    line-height: 17px;
+    line-height: 1.7rem;
     background: red;
     color: white;
-    width: 9px;
-    height: 8px;
+    width: 0.9rem;
+    height: 0.8rem;
     border-radius: 50%;
   }
 
 .full-block .pagecontent{
     width: 90%;
-    height:85%;
     float: right;
     font-family:Ubuntu;
 }
@@ -168,19 +167,16 @@ cursor: pointer;
 .pagecontent .dashboard{
   color: black;
   margin-left: 2rem;
-  height:12%;
   margin-top: 2rem;
   padding-bottom: 1rem;
 }
 .pagecontent .option{
-  height: 20%;
   padding-left: 2%;
   padding-right: 2%;
 }
 .option .box{
   width:31%;
-  height: 100%;
-  box-shadow: 0 0 1px lightgrey;
+  box-shadow: 0 0 0.1rem lightgrey;
   display: inline-flex;
   padding-left: 2rem;
 }
@@ -294,72 +290,167 @@ cursor: pointer;
  }
 .job-body .value button{
    background-color: transparent;
-   border:0.5px solid;
+   border:0.05rem solid;
    border-color: #afbbbb;
-   margin-top: 20px;
-   margin-right: 10px;
-   padding-top: 5px;
-   padding-bottom: 5px;
-   padding-right: 8px;
-   padding-left: 8px;
+   margin-top: 2rem;
+   margin-right: 1rem;
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+   padding-right: 0.8rem;
+   padding-left: 0.8rem;
    color: #afbbbb;
    font-family: Ubuntu;
-   font-size: 15px;
+   font-size: 1.5rem;
    width: auto;
-   text-align: center;
+   text-align: center;<br>
    text-decoration: none;
-   border-radius:50px;
+   border-radius:5rem;
    display: inline-block;
    outline: none;
    cursor: pointer;
- }
+ }.full-block .topnav {
+  overflow: hidden;
+  width:90%;
+  float:right;
+  font-family:Ubuntu;
+  box-shadow: 0rem 0.2rem #F2F4F2;
+}
 .job-body .value button:hover{
    color: white;
    background-color: #3fb0ac;
  }
 .job-body .right,.right-body .right{
    float: right;
-   padding-right: 5px;
+   padding-right: 0.5rem;
  }
 .right-body .article-body .header{
      width: auto;
      color: #444442;
      height: auto;
      font-size: large;
-     margin-top: 5px;
-     box-shadow: 0 0 1px lightgrey;
+     margin-top: 0.5rem;
+     box-shadow: 0 0 0.1rem lightgrey;
      font-family: Ubuntu;
      font-weight: normal;
-     padding-top: 5px;
-     padding-left: 20px;
+     padding-top: 1.5rem;
+     padding-left: 2rem;
    }
 .right-body .article-body .value{
-     margin-top: 15px;
-     font-size: 15px;
+     margin-top: 1.5rem;
+     font-size: 1.5rem;
      width: auto;
      color: #444442;
-     padding-top: 3px;
-     padding-left: 20px;
+     padding-top: 0.3rem;
+     padding-left: 2rem;
    }
 .article-body .value .inline{
      display: inline-block;
    }
    ::-webkit-scrollbar {
-       width: 7px;
+       width: 0.7rem;
    }
-
-   /* Track */
    ::-webkit-scrollbar-track {
-       -webkit-border-radius: 5px;
-       border-radius: 5px;
+       -webkit-border-radius: 0.5rem;
+       border-radius: 0.5rem;
    }
 
-   /* Handle */
    ::-webkit-scrollbar-thumb {
-       -webkit-border-radius: 5px;
-       border-radius: 5px;
+       -webkit-border-radius: 0.5rem;
+       border-radius: 0.5rem;
        background: lightgrey;
    }
    ::-webkit-scrollbar-thumb:window-inactive {
        background: lightgrey;
+   }
+
+   @media only screen and (min-width:321px) and (max-width:768px) {
+     .full-block .navigation-bar{
+       width: 100%;
+       height: auto;
+       position: fixed;
+       background-color: #fff;
+       overflow-x: hidden;
+       color:#848888;
+       box-shadow: 0.3rem 0rem #F2F4F2;
+     }
+     .navigation-bar ul {
+        list-style-type: none;
+        display: inline-block;
+        padding-left: 0rem;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+      }
+     .navigation-bar li{
+       display: inline-block;
+       cursor: pointer;
+       padding-top: 1rem;
+       padding-bottom: 1rem;
+
+     }
+     .navigation-bar img{
+       width: 2.5rem;
+       height:2.5rem;
+       vertical-align: middle;
+       padding-left: 2.4rem;
+       margin-top: 0rem;
+       margin-bottom: 0rem;
+     }
+     .navigation-bar span{
+       padding-left: 1rem;
+       font-size: 1.5rem;
+       padding-right: 5rem;
+     }
+     .navigation-bar .navigation-bar-icon{
+       background-color: #fff;
+       font-size: 1rem ;
+       color:#848888;
+       cursor: pointer;
+       text-align: center;
+       display: inline;.navigation-bar
+       margin-right: 0.1rem;
+     }
+     .navigation-bar i{
+       margin-bottom: 0rem;
+     }
+     .navigation-bar .selected-icon{
+       font-size: 1.3rem ;
+       color:#3fb0ac;
+       text-align: center;
+       display: inline;
+       margin-right: 0.1rem;
+       background-color: white;
+       padding-top: 1rem;
+       border-top: 0.2rem solid #3fb0ac;
+     }
+     .navigation-bar a,.selected-icon a{
+       padding-top: .5rem;
+       font-size: 1.3rem;
+       display: inline;
+     }
+     .navigation-bar .bg{
+       background-color:#3fb0.navigation-barac;
+     }
+     .navigation-bar .home{
+        color:#848888;
+        font-size:1.5rem;
+        float:right;
+        margin-left:1rem;
+        font-weight: 500;
+        font-family:Ubuntu;
+     }
+     .navigation-bar-icon a:hover,.selected-icon a:hover,.navigation-bar-icon:hover,.selected-icon:hover {
+       background-color: #3fb0ac;
+       color: #ffffff;
+     }
+     .full-block .topnav {
+       overflow: hidden;
+       width:100%;
+       font-family:Ubuntu;
+       box-shadow: 0rem 0.2rem #F2F4F2;
+     }
+   }
+   @media only screen and (max-width: 1000px) {
+     .option .box{
+       display: block;
+     }
    }
